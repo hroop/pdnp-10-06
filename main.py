@@ -14,3 +14,5 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# dwa razy shift - podręczna wyszukiwarka
+# ctrl alt l - formatowanie kodu do zasad pep8

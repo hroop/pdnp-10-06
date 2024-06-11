@@ -150,3 +150,15 @@ print(lista3)  # ['Python.']
 krotka = tuple(liczby)  # tuple() rzutowanie na krotkę, tuplę
 print(type(krotka))  # <class 'tuple'>
 print(krotka)  # (999, 6666, 22.34, 12)
+
+# stworzyć listę osob obecnych na sali
+lista_sala = ['radek', 'Aldona', 'Paweł', "Wojtek", 'Wojtek', 'Mateusz']
+print(lista_sala)  # ['radek', 'Aldona', 'Paweł', 'Wojtek', 'Wojtek', 'Mateusz']
+lista_s = []
+lista_s.append('r')
+lista_s.append('a')
+lista_s.append('p')
+lista_s.append('w')
+lista_s.append('w')
+lista_s.append('m')
+print(lista_s)

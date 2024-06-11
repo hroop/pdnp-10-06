@@ -80,3 +80,73 @@ lista.append("Paulina")
 print(lista)  # ['Aldona', 'Zenek', 'Anna', 'Tomek', 'Paulina']
 print(lista.pop(-2))  # Tomek
 print(lista)  # ['Aldona', 'Zenek', 'Anna', 'Paulina']
+
+a = 1
+b = 3
+a = b
+print("a=", a, "b=", b)  # a= 3 b= 3
+b = 7
+print("a=", a, "b=", b)  # a= 3 b= 7
+
+lista_copy = lista.copy()  # kopia elementów listy
+lista_2 = lista  # a = b to jest tylko kopiowanie adresu pamięci (referencji)
+lista.clear()  # b = 7
+print(lista_2)  # a []
+print(lista)  # b []
+print(lista_copy)  # ['Aldona', 'Zenek', 'Anna', 'Paulina']
+print(id(lista_2))
+print(id(lista))
+print(id(lista_copy))
+# 2115978056064
+# 2115978056064
+# 2115978376320
+
+liczby = [54, 999, 34, 12, 22.34, 687]  # [54, 999, 34, 12, 22.34, 687]
+print(liczby)
+# liczby = [54, 999, 34, 12, 22.34, 687, "A"]  # [54, 999, 34, 12, 22.34, 687, 'A']
+print(liczby)
+print(type(liczby))  # <class 'list'>
+
+liczby.sort()  # sortowanie
+print(liczby)  # [12, 22.34, 34, 54, 687, 999]
+# liczby = [54, 999, 34, 12, 22.34, 687, "A"]
+# liczby.sort()  # TypeError: '<' not supported between instances of 'str' and 'int'
+
+lista_osob = ['radek', 'ola', 'agata', 'lena']
+lista_osob.sort()
+print(lista_osob)  # ['agata', 'lena', 'ola', 'radek']
+
+liczby.reverse()
+print(liczby)  # [999, 687, 54, 34, 22.34, 12]
+
+# sortowanie i odwrócenie
+lista_osob.sort(reverse=True)
+print(lista_osob)  # ['radek', 'ola', 'lena', 'agata']
+
+liczby[3] = 6666
+print(liczby[0:3])
+print(liczby[-2])
+# [999, 687, 54]
+# 22.34
+print(liczby[-3:])  # [6666, 22.34, 12]
+
+liczby.remove(54)
+print(liczby)  # [999, 687, 6666, 22.34, 12]
+
+print(liczby.pop(1))  # 687
+print(liczby)  # [999, 6666, 22.34, 12]
+print(len(liczby))  # długość 4
+
+print(liczby[0:4:2])  # [999, 22.34]
+print(liczby[::-1])  # wyświetli w kolejności odwrotnej
+
+tekst = "Python."
+lista1 = list(tekst)  # rzutowanie na listę, rozpakowanie sekwencji
+print(lista1)  # ['P', 'y', 't', 'h', 'o', 'n', '.']
+
+lista3 = [tekst]
+print(lista3)  # ['Python.']
+
+krotka = tuple(liczby)  # tuple() rzutowanie na krotkę, tuplę
+print(type(krotka))  # <class 'tuple'>
+print(krotka)  # (999, 6666, 22.34, 12)

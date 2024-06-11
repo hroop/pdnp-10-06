@@ -44,3 +44,20 @@ print(dictionary.get('name', 'default'))  # default
 # input() - pobiera dane np.:  z klawiatury
 tekst = input("Wpisz tekst")
 print(tekst)
+
+dict_pol_ang = {'kot': 'cat', 'pies': 'dog', 'jabłko': 'apple'}
+print(dict_pol_ang.keys())
+odp = input("Podaj słówko do przetłumaczenia")
+# print(dict_pol_ang[odp.lower().replace(" ","")])
+print(dict_pol_ang.get(odp.lower().replace(" ", ''), 'nie mam takiego słowka'))
+
+# aplikacja kalkulator
+# pobrac dwie liczby
+# wypisac wynik działania (dodawanie)
+# input() zwraca str
+a = int(input('Podaj pierwsza liczbę'))
+b = input('Podaj drugą liczbę')
+print(a + float(b))  # 13.0
+
+# eval()
+print(eval("3*10+15"))  # 45

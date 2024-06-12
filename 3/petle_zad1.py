@@ -1,6 +1,7 @@
 # pętle - mozliwosć wykonania wielokrotnie tego samego kodu
 # for - pętla iteracyjna
 import random
+from itertools import zip_longest
 
 for i in range(5):  # 0..4
     print(i)
@@ -151,3 +152,23 @@ for i, (p, w) in enumerate(zip(ludzie, wiek)):
 # 1 Arek 34
 # 2 Tomek 23
 # 3 Ania 30
+
+zipped = zip_longest(ludzie, wiek, fillvalue=None)
+print(zipped)  # <itertools.zip_longest object at 0x00000237A47715D0>
+# for zipp in zipped:
+#     print(zipp)
+# # ('Radek', 40)
+# # ('Arek', 34)
+# # ('Tomek', 23)
+# # ('Ania', 30)
+# # ('krzysztof', None)
+# print("------")
+# for i, w in zipped:
+#     print(i, w)
+zip_list = list(zipped)
+for i in zip_list:
+    print(i)
+print("------")
+for i, w in zip_list:
+    print(i, w)
+# zadanko domowe - wyswietlic z indeksem 0 Radek 44

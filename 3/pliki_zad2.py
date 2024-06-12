@@ -11,3 +11,11 @@ result = chardet.detect(lines)
 print(result)  # {'encoding': 'Windows-1254', 'confidence': 0.6658130518007462, 'language': 'Turkish'}
 # przy większej próbce jest ok
 # {'encoding': 'utf-8', 'confidence': 0.7525, 'language': ''}
+encoding = result['encoding']
+print(encoding)  # {'encoding'}
+print(lines.decode(encoding))
+# Nadpisane
+# Dodane
+# Dodane
+# Dodane
+# Dośaźdane

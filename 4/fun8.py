@@ -28,4 +28,17 @@ allparams2(1, 2, 3, d=45)
 
 
 def alllparam_3(a, b, /, c=42, *args, d=256, **kwargs):
-    pass
+    print("a, b", a, b)
+    print("c, d", c, d)
+    print("args", args)
+    print("kwargs", kwargs)
+
+
+# a i b musimy przekazac po pozycji
+alllparam_3(1, 2)
+alllparam_3(1, 2, 3)  # c, d 3 256
+alllparam_3(1, 2, 3, 4, 5, 6)  # args (4, 5, 6)  # c, d 3 7
+# d musimy przekazac po nazwie
+alllparam_3(1, 2, 3, 4, 5, 6, d=7)  # args (4, 5, 6)
+alllparam_3(1, 2, 3, 4, 5, 6, d=7, name='Radek')  # kwargs {'name': 'Radek'}
+alllparam_3(1, 2, 3, 4, 5, 6, d=7, a=8, name='Radek')  # kwargs {'a': 8, 'name': 'Radek'}

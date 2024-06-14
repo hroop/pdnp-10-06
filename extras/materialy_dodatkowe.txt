@@ -116,3 +116,8 @@ spam -= 1    spam = spam - 1
 spam *= 1    spam = spam * 1
 spam /= 1    spam = spam / 1
 spam %= 1    spam = spam % 1
+
+Platformy do ćwiczen
+https://pl.altapps.net/soft/hackerrank-com?utm_content=cmp-true
+Hackerrank
+w3schools
